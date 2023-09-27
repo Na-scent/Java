@@ -29,8 +29,26 @@ public class PromotionCastingExample {
         char vc = (char) vv;
         System.out.println(vc);
 
-
         // byte, short 자료형은 연산 시 int로 자동 변환되어서 처리됨.
         // 서로 다른 자료형의 연산 시 더 큰 타입으로 변환되어서 연산됨.
+
+        int x = 1;
+        int y = 2;
+        double result = (double) x / y;
+        System.out.println(result);
+
+        // 숫자 + 문자일 경우 문자로 casting
+
+        // 문자를 숫자로 바꾸고 싶은 경우 ***.parse***(str)를 이용
+
+        String str = "10";
+        byte bt = Byte.parseByte(str);
+        System.out.println(bt);
+
+        // 다른 값들을 문자로 바꾸고 싶은 경우 String.valueOf(value)를 이용
+
+        String str2 = String.valueOf(bt);
+        System.out.println(str2);
     }
+
 }
